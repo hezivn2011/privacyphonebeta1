@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔐"
+        android:textSize="56sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="PrivacyPhone"
+        android:textColor="@color/text_primary"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nhập mã PIN để tiếp tục"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:id="@+id/pin_dots_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/accent_red"
+        android:textSize="13sp"
+        android:visibility="invisible"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <Button android:id="@+id/btn_1" style="@style/PinButton" android:text="1"/>
+        <Button android:id="@+id/btn_2" style="@style/PinButton" android:text="2"/>
+        <Button android:id="@+id/btn_3" style="@style/PinButton" android:text="3"/>
+        <Button android:id="@+id/btn_4" style="@style/PinButton" android:text="4"/>
+        <Button android:id="@+id/btn_5" style="@style/PinButton" android:text="5"/>
+        <Button android:id="@+id/btn_6" style="@style/PinButton" android:text="6"/>
+        <Button android:id="@+id/btn_7" style="@style/PinButton" android:text="7"/>
+        <Button android:id="@+id/btn_8" style="@style/PinButton" android:text="8"/>
+        <Button android:id="@+id/btn_9" style="@style/PinButton" android:text="9"/>
+        <Button android:id="@+id/btn_clear" style="@style/PinButtonAction"
+            android:text="C" android:textColor="@color/accent_red"/>
+        <Button android:id="@+id/btn_0" style="@style/PinButton" android:text="0"/>
+        <Button android:id="@+id/btn_delete" style="@style/PinButtonAction"
+            android:text="⌫" android:textColor="@color/text_secondary"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tv_use_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Dùng câu hỏi bảo mật"
+        android:textColor="@color/accent_blue"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

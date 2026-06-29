@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PinButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="strokeColor">@color/card_elevated</item>
+        <item name="backgroundTint">@color/card_dark</item>
+        <item name="cornerRadius">40dp</item>
+        <item name="rippleColor">@color/accent_green</item>
+    </style>
+
+    <style name="PinButtonAction" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="strokeColor">@color/card_elevated</item>
+        <item name="backgroundTint">@color/surface_dark</item>
+        <item name="cornerRadius">40dp</item>
+    </style>
+
+    <style name="AppTimeCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/card_dark</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <style name="SectionLabel">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="DarkDialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:colorBackground">@color/surface_dark</item>
+        <item name="colorPrimary">@color/accent_green</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <style name="BigValueText">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

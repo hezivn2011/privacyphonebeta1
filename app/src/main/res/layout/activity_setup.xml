@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔐"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="PrivacyPhone"
+            android:textColor="@color/text_primary"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Thiết Lập Bảo Mật"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tạo mã PIN để bảo vệ ứng dụng khỏi bị xoá"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"/>
+
+    <!-- PIN Dots Display -->
+    <LinearLayout
+        android:id="@+id/pin_dots_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+    </LinearLayout>
+
+    <!-- Step Label -->
+    <TextView
+        android:id="@+id/tv_step_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Nhập mã PIN (ít nhất 4 chữ số)"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"/>
+
+    <!-- Error Text -->
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/accent_red"
+        android:textSize="13sp"
+        android:visibility="invisible"/>
+
+    <!-- Numpad -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <!-- Row 1 -->
+        <Button android:id="@+id/btn_1" style="@style/PinButton" android:text="1"/>
+        <Button android:id="@+id/btn_2" style="@style/PinButton" android:text="2"/>
+        <Button android:id="@+id/btn_3" style="@style/PinButton" android:text="3"/>
+
+        <!-- Row 2 -->
+        <Button android:id="@+id/btn_4" style="@style/PinButton" android:text="4"/>
+        <Button android:id="@+id/btn_5" style="@style/PinButton" android:text="5"/>
+        <Button android:id="@+id/btn_6" style="@style/PinButton" android:text="6"/>
+
+        <!-- Row 3 -->
+        <Button android:id="@+id/btn_7" style="@style/PinButton" android:text="7"/>
+        <Button android:id="@+id/btn_8" style="@style/PinButton" android:text="8"/>
+        <Button android:id="@+id/btn_9" style="@style/PinButton" android:text="9"/>
+
+        <!-- Row 4 -->
+        <Button android:id="@+id/btn_clear" style="@style/PinButtonAction"
+            android:text="C" android:textColor="@color/accent_red"/>
+        <Button android:id="@+id/btn_0" style="@style/PinButton" android:text="0"/>
+        <Button android:id="@+id/btn_delete" style="@style/PinButtonAction"
+            android:text="⌫" android:textColor="@color/text_secondary"/>
+    </GridLayout>
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/accent_green"
+        android:text="XÁC NHẬN"
+        android:textColor="@color/bg_dark"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <!-- Security Question Option -->
+    <TextView
+        android:id="@+id/tv_security_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Hoặc dùng câu hỏi bảo mật"
+        android:textColor="@color/accent_blue"
+        android:textSize="14sp"
+        android:padding="8dp"/>
+
+</LinearLayout>

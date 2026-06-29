@@ -1,0 +1,2 @@
+-keep class com.privacyphone.** { *; }
+-keepattributes *Annotation*

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PrivacyPhone</string>
+    <string name="setup_title">Thiết Lập Bảo Mật</string>
+    <string name="create_pin">Tạo Mã PIN</string>
+    <string name="confirm_pin">Xác Nhận PIN</string>
+    <string name="security_question">Câu Hỏi Bảo Mật</string>
+    <string name="home">Trang Chủ</string>
+    <string name="set_time">Đặt Thời Gian</string>
+    <string name="sensitive_media">Hình Ảnh Nhạy Cảm</string>
+    <string name="app_usage_time">Số Thời Gian Sử Dụng Thiết Bị</string>
+    <string name="sensitive_count">Hình Ảnh, Video Nhạy Cảm</string>
+    <string name="ai_evaluate">A.I Evaluate</string>
+    <string name="customize_time">Tuỳ Chỉnh Thời Gian Sử Dụng</string>
+    <string name="search_app">Tìm kiếm ứng dụng</string>
+    <string name="block_sensitive">Trình Chặn Hình Ảnh Video Nhạy Cảm</string>
+    <string name="enter_pin">Nhập Mã PIN</string>
+    <string name="wrong_pin">PIN không đúng. Thử lại!</string>
+    <string name="pin_mismatch">PIN không khớp. Nhập lại!</string>
+    <string name="pin_too_short">PIN cần ít nhất 4 chữ số</string>
+    <string name="setup_complete">Thiết lập hoàn tất!</string>
+    <string name="hours">giờ</string>
+    <string name="minutes">phút</string>
+</resources>
